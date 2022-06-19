@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
+  font-family: Raleway;
+}
+
+html {
+  /* background-color: #dfdfdf; */
+  background-color: rgb(187, 223, 234);
+  /* background: linear-gradient(white 10%, blue 10%, green 10%); */
+  /* background-image: url(./Data.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 30%; */
+  /* background-image: linear-gradient(white, blue, green); */
+  /* background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  ); */
+  /* background-image: radial-gradient(red, yellow, green); */
+  /* background-image: conic-gradient(white, green, green, green, white); */
+}

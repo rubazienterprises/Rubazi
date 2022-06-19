@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="background_styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./Productlist.css" />
+
+    <script src="script.js" defer></script>
+    <script src="./Productlist.js" defer></script>
+    <title>Rubazi Enterprises</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./Logo.jpg" />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav class="navbar">
+        <div class="brand-title">
+          <img src="./Logo.jpg" alt="Brand Logo" />
+          Rubazi
+        </div>
+
+        <a class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li>
+              <a href="mailto:rubazienterprises@gmail.com"
+                >E-mail: rubazienterprises@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="https://wa.me/message/MS77M5OT5QAHE1" target="_blank"
+                >Mobile WApp: +91-8178284217</a
+              >
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#productlist">Products</a></li>
+            <li><a href="#footerdivs">About</a></li>
+            <li><a href="#footerdivs">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="nav-top">
+        <div class="top-navbar-links">
+          <ul>
+            <li>
+              <a href="#enquiry" class="fa-solid fa-message-question"
+                >Enquiry</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/message/MS77M5OT5QAHE1"
+                target="_blank"
+                class="fa fa-whatsapp"
+                >WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/playlist?list=PLxEGiSHIxX13eX9zKh6F6CvEbL-eh9MMQ"
+                target="_blank"
+                class="fa fa-youtube"
+              >
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/rubazi_enterprises/"
+                target="_blank"
+                class="fa fa-instagram"
+              >
+                Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/RUBAZIENTERPRISES/"
+                target="_blank"
+                class="fa fa-facebook"
+              >
+                Facebook</a
+              >
+            </li>
+            <!-- <li>
+              <a
+                href="https://chat.whatsapp.com/ITbExD8uHS97XiwX6ZjUVP"
+                target="_blank"
+                class="fa fa-whatsapp"
+              >
+                Join WhatsApp Group</a
+              >
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Do more with Tally Prime</h1>
+    </div>
+
+    <div class="bottom-div-parent">
+      <div class="bottom-div"><h1>AddOns</h1></div>
+      <div class="bottom-div"><h1>Customization</h1></div>
+      <div class="bottom-div"><h1>Integration</h1></div>
+      <div class="bottom-div"><h1>Web Apps</h1></div>
+      <div class="bottom-div"><h1>Mobile Apps</h1></div>
+    </div>
+    <div class="bottom-caption"><h1>Use Tally, the way you want!</h1></div>
+
+    <div class="flex-container">
+      <p id="productlist"></p>
+      <div class="product-heading">
+        <h1><u> List of Products</u></h1>
+      </div>
+
+      <input
+        id="divsearchinput"
+        type="search"
+        onkeyup="divsearchModule()"
+        placeholder="Search products..."
+        title="Type in a name"
+      />
+      <div class="divmodulemain">
+        <div id="divmodulelist" class="flex-container"></div>
+        <div class="scrollDown">
+          <p><i class="bx bxs-down-arrow"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <h1>Customers Voice</h1>
+    </div>
+    <div class="testimonialImg">
+      <img src="./Images/Customers voice-1.PNG" alt="Customers Voice-1" />
+      <img src="./Images/Customers voice-2.PNG" alt="Customers Voice-2" />
+      <img src="./Images/Customers voice-3.PNG" alt="Customers Voice-3" />
+    </div>
+    <div class="enquiry" id="enquiry">
+      <div class="hire-me__title">
+        <!-- <i class="bx bxs-briefcase"></i> -->
+        <span>Enquiry</span>
+        <!-- <i class="bx bxs-briefcase"></i> -->
+      </div>
+      <form
+        action="https://formsubmit.co/ef1a1cb50d502b3b893daf76244a2405"
+        method="POST"
+        class="form"
+      >
+        <input type="hidden" name="_subject" value="New enquiry!" />
+        <!-- <input type="hidden" name="_captcha" value="false" /> -->
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="http://www.rubazi.com" />
+        <!-- <div class="enquirybody"> -->
+        <div class="form__left">
+          <div class="input-group">
+            <input
+              type="text"
+              name="Name"
+              placeholder=" "
+              autocomplete="off"
+              class="name"
+              required
+            />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              name="Email"
+              placeholder=" "
+              autocomplete="off"
+              class="mail"
+              required
+            />
+            <label for="email">Your Mail ID</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="tel"
+              pattern="+91[7-9]{2}-[0-9]{3}-[0-9]{4}"
+              maxlength="13"
+              value="+91"
+              name="Mobile"
+              placeholder=" "
+              autocomplete="off"
+              class="mobile"
+              required
+            />
+            <label for="mobile">Your Mobile No.</label>
+          </div>
+        </div>
+
+        <div class="form__right">
+          <div class="input-group">
+            <select name="Enquiry_For" class="select" required>
+              <option value="" hidden disabled selected>Enquiry For</option>
+              <option value="Tally Addons">Tally Addons</option>
+              <option value="Tally Customization">Tally Customization</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Windows Application">Windows Application</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          <div class="description">
+            <div class="input-group">
+              <textarea
+                name="Description"
+                class="desc"
+                rows="4"
+                required
+                spellcheck="false"
+              ></textarea>
+              <label for="desc">Describe your enquiry</label>
+            </div>
+            <i class="bx bxs-info-circle tooltip">
+              <span class="tooltiptext"> Describe your enquiry? </span>
+            </i>
+          </div>
+          <button class="submit-btn">submit</button>
+        </div>
+        <!-- </div> -->
+      </form>
+    </div>
+    <div class="footerdiv" id="footerdivs">
+      <div class="footerdiv-one">
+        <h1>About</h1>
+        <p>
+          A freelance software developer, developing TDL, Web using HTML, CSS,
+          Javascript, C#, SQL Server, MySQL, Nodejs. We have ready to use
+          utiliies. We also develope Addons on demand. Contact me to integrate
+          your application with Tally, to develope new controls and reports. We
+          help out client to implement payrol, inventory etc. Check out our
+          product list.
+        </p>
+      </div>
+      <div class="footerdiv-one">
+        <h2>Contact</h2>
+        <p>Mobile: +91-8178284217</p>
+        <p>Telegram: +91-8178284217</p>
+        <p>WhatsApp: +91-8178284217</p>
+        <p>Discord: Rubazi#8548</p>
+
+        <p>
+          E-mail:
+          <a href="mailto:rubazienterprises@gmail.com" target="_blank"
+            >rubazienterprises@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="footerdiv-one">
+        <h2>Core Competency</h2>
+        <p>
+          We have experties in developing TDL Codes, HTML, CSS, Javascript,
+          NODEJS, SQL Server.
+        </p>
+      </div>
+      <div class="footerdiv-one">
+        <h2>Social Media</h2>
+        <p>Visit our social media page on Facebook, Instagram.</p>
+        <p class="fa fa-instagram">
+          Instagram:
+          <a
+            href="https://www.instagram.com/rubazi_enterprises/"
+            target="_blank"
+            >rubazi_enterprises</a
+          >
+        </p>
+        <p class="fa fa-facebook">
+          Facebook:
+          <a href="https://www.facebook.com/RUBAZIENTERPRISES/" target="_blank"
+            >RUBAZIENTERPRISES</a
+          >
+        </p>
+        <p class="fa fa-youtube">
+          YouTube:
+          <a
+            href="https://www.youtube.com/playlist?list=PLxEGiSHIxX13eX9zKh6F6CvEbL-eh9MMQ"
+            target="_blank"
+            >Rubazi Rubazi</a
+          >
+        </p>
+        <p class="fa fa-linkedin">
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/rubazi-enterprises-5858481b6/"
+            target="_blank"
+          >
+            RubaziEnterprises</a
+          >
+        </p>
+        <p class="fa fa-reddit">
+          Reddit:
+          <a
+            href="https://www.reddit.com/user/rubazienterprises/"
+            target="_blank"
+          >
+            r/rubazienterprises</a
+          >
+        </p>
+      </div>
+      <div class="footerdiv-one">
+        <h2>Samples</h2>
+        <p>
+          Please explore some of the projects, samples, and examples given
+          below:
+        </p>
+        <p>
+          <a href="#" target="_blank">Sample-1</a>
+        </p>
+        <p>
+          <a href="#" target="_blank">Sample-2</a>
+        </p>
+        <p>
+          <a href="#" target="_blank">Sample-3</a>
+        </p>
+      </div>
+    </div>
+    <div class="callnowmain">
+      <div class="callnow">Call Now +91-8178284217</div>
+    </div>
+  </body>
+</html>
