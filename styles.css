@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -22,6 +24,7 @@ body {
   padding: 0;
   /* height: 200vh; */
 }
+
 .nav-top {
   display: flex;
   justify-content: flex-end;
@@ -117,11 +120,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   /* background-image: url("./TallyPrime.jpg");
   background-size: 200px;
   background-repeat: space;
   background-position-x: center; */
 }
+
 .main h1 {
   /* background-color: rgb(98, 148, 240); */
   padding: 20px;
@@ -222,7 +227,46 @@ body {
   font-size: xx-large;
   transform: translateY(-200px);
 }
+.circle-1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(13, 208, 176, 0.3);
+  border-radius: 50%;
+  /* border: 1px solid blue; */
+  /* z-index: -1; */
+  top: -50px;
+  left: -50px;
+}
 
+.circle-2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(181, 222, 109, 0.4);
+  border-radius: 50%;
+  /* border: 1px solid blue; */
+  z-index: -1;
+  right: 0;
+  top: 150px;
+}
+
+.tallyprime-text {
+  color: rgba(251, 252, 253, 0);
+  /* display: none; */
+  /* visibility: hidden; */
+  /* font-weight: 900; */
+  /* background-color: rgba(135, 175, 222, 0.1); */
+  /* background-image: url("./images/tally-prime-logo.svg");
+  background-repeat: no-repeat; */
+}
+.tallyprime-logo {
+  /* position: absolute; */
+  width: auto;
+  height: auto;
+  background-image: url("./images/tally-prime-logo.svg");
+  background-repeat: no-repeat;
+}
 .footerdiv {
   display: flex;
   justify-content: space-around;
@@ -253,6 +297,7 @@ body {
   /* .nav-top {
     display: none;
   } */
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -288,10 +333,10 @@ body {
     transform: translateY(-100px);
   }
   /* .main {
-    display: none;
-  }
+    overflow: hidden;
+  } */
 
-  .bottom-div {
+  /* .bottom-div {
     display: none;
   } */
 }

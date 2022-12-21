@@ -67,6 +67,16 @@
   box-shadow: 10px 10px 5px orange;
   /* text-shadow: 10px 10px 10px grey; */
 }
+.description {
+  color: black;
+  margin-left: 50px;
+  font-size: small;
+  font-style: italic;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: rgb(246, 243, 243);
+}
 
 /* .product-card:nth-child(odd) {
   background-image: linear-gradient(#d7e7aa, #cccccc);
